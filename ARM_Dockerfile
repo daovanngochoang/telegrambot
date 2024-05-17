@@ -1,0 +1,19 @@
+FROM arm32v7/python:3.9.18-bullseye
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+
+RUN apt-get update
+RUN apt-get install cmake -y
+RUN apt-get install build-essential -y
+RUN apt-get install libblas3 liblapack3 liblapack-dev libblas-dev libatlas-base-dev -y
+RUN apt-get install ninja-build -y
+RUN pip install --upgrade pip setuptools wheel
+RUN pip install ninja==1.10.2
+RUN python -m pip install numpy  --config-settings=setup-args="-Dallow-noblas=true"
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD [ "python", "./main.py" ]

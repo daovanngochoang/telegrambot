@@ -1,0 +1,46 @@
+<pre>
+        BOT4US
+The General Assistance.
+author: andreas_solarstorm
+</pre>
+
+To read more detail run:
+/help [command]
+Example: /help range
+
+Google Sheet File.
+-----------------------------------------------
+/open - open a file sheet via url
+/select_sheet - set worksheet to use command
+/publish - publish worksheet so that member can use it
+/share - share the current file to email
+/stop_publish - stop publish, member will not allowed to access your file and worksheet.
+/export - export to open sheet file.
+/ls - list worksheets in file
+/grant_admin - add new admin to bot admin.
+/rm_admin - remove admin from the admin group.
+
+Worksheets.
+-----------------------------------------------
+/add_worksheet - add new worksheet to the file.
+/del_worksheet - del worksheet from the file.
+
+Worksheet Data.
+-----------------------------------------------
+/range - get data by range
+/del - delete data by range
+/head - get first 10 rows
+/tail - get 10 row at the end.
+/add_row - append new row data
+/add_col - add col
+/query - query data
+/del_col - delete column by name
+/update_at - update data value by row, col_name
+
+Draw Graph.
+-----------------------------------------------
+/areaplot - Area plot
+/barplot - Bar plot
+/histogramplot - Histogram plot
+/lineplot - Line Plot.
+

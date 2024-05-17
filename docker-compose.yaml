@@ -1,0 +1,4 @@
+services:
+  telegrambot:
+    container_name: Telegrambot-ibox4us
+    build: .
